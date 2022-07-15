@@ -1,0 +1,199 @@
+:root {
+    --background-color: #202c37;
+    --secondary-background-color: #2b3945;
+    --text-color: #fff;
+    --very-light-gray-light-mode-background: #fafafa;
+    --very-dark-blue-light-mode-text: #111517;
+    --dark-gray-light-mode-inputs: #858585;
+    --white-light-mode-elements: #fff;
+    --font-weigth-light: 300;
+    --font-weigth-medium: 600;
+    --font-weigth-bold: 900;
+    --border-radius: 5px
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #202c37;
+    background-color: var(--background-color);
+    color: #fff;
+    color: var(--text-color);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px
+}
+
+.App {
+    align-items: center;
+    flex-direction: column
+}
+
+.App,
+.aling-items-flex {
+    display: flex
+}
+
+.row-space-between {
+    justify-content: space-between
+}
+
+.row-everything-center {
+    justify-content: center
+}
+
+.row-Y-center,
+.row-everything-center {
+    align-items: center;
+    display: flex
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none
+}
+
+button:hover {
+    cursor: pointer
+}
+
+header {
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: var(--font-weigth-medium);
+    margin-bottom: 30px;
+    padding: 20px 5%;
+    width: 100%
+}
+
+.input-container,
+header {
+    background-color: #2b3945;
+    background-color: var(--secondary-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.input-container {
+    border-radius: 5px;
+    border-radius: var(--border-radius);
+    margin: auto auto 30px;
+    padding: 10px 20px;
+    width: 90%
+}
+
+input[type=search] {
+    background-color: initial;
+    border: none;
+    color: #fff;
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+    padding: 10px 0 10px 10px;
+    width: 100%
+}
+
+ion-icon[name=search-outline] {
+    font-size: 22px
+}
+
+.filter {
+    margin-left: 5%;
+    position: relative;
+    width: 200px
+}
+
+select[name=region] {
+    background-color: #2b3945;
+    background-color: var(--secondary-background-color);
+    border: none;
+    border-radius: 5px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    color: #fff;
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+    padding: 20px;
+    width: 200px;
+    z-index: 10
+}
+
+select[name=region] option {
+    border: 5px solid red;
+    outline-color: transparent
+}
+
+.flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 5% 50px
+}
+
+.card {
+    background-color: #2b3945;
+    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0;
+    width: 300px
+}
+
+.card:hover {
+    cursor: pointer
+}
+
+.card div {
+    padding: 20px
+}
+
+.country-flag-img {
+    border-radius: 5px 5px 0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0
+}
+
+.country-name {
+    margin-bottom: 10px
+}
+
+.region {
+    margin: 5px 0
+}
+
+.capital,
+.population,
+.region {
+    font-weight: 600;
+    font-weight: var(--font-weigth-medium)
+}
+
+.capital span,
+.population span,
+.region span {
+    font-weight: 300;
+    font-weight: var(--font-weigth-light)
+}
+
+.country-flag-img {
+    height: 200px;
+    width: 300px
+}
+
+@media only screen and (min-width:740px) {
+    .search-input--and--filter-container {
+        flex-direction: row;
+        padding: 0 5%
+    }
+}
+
+/*# sourceMappingURL=main.9f5a2d2c.css.map*/
